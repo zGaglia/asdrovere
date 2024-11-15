@@ -20,17 +20,21 @@
         .container {
             text-align: center;
             padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         img {
-            max-width: 500px;
+            max-width: 100%;
             height: auto;
         }
         .sponsor-logo {
             max-width: 300px;
-            margin: 10px;
+            width: 100%; /* Adatta la larghezza al dispositivo */
+            margin: 10px auto; /* Centra e aggiunge spazio verticale */
             border: 1px solid black;
             border-radius: 50%;
             box-sizing: border-box;
+            padding: 10px; /* Spazio interno per evitare che il contenuto tocchi il bordo */
         }
         h1 {
             color: red;
@@ -69,8 +73,15 @@
         .sponsor-section {
             margin-top: 20px;
             display: flex;
+            flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
             justify-content: center;
             gap: 20px;
+        }
+        /* Media Query per schermi piccoli */
+        @media (max-width: 600px) {
+            .sponsor-logo {
+                max-width: 150px; /* Riduce la dimensione delle immagini sui telefoni */
+            }
         }
     </style>
 </head>
