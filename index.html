@@ -10,61 +10,90 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: white;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
         .container {
             text-align: center;
+            padding-top: 20px;
         }
         img {
             max-width: 500px;
             height: auto;
+        }
+        .sponsor-logo {
+            max-width: 300px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 50%;
+            box-sizing: border-box;
         }
         h1 {
             color: red;
         }
         .contact {
             margin: 20px 0;
-            font-size: 24px; /* Dimensione del testo aumentata */
+            font-size: 24px;
         }
         .social-icons {
             margin-top: 20px;
-            font-size: 24px; /* Dimensione delle icone social aumentata */
-        }
-        .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
             font-size: 24px;
-            transition: transform 0.3s, color 0.3s; /* Transizione per ingrandimento e colore */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-        .social-icons a:hover {
-            transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
-            color: #3b5998; /* Colore originale di Facebook */
+        .social-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
         }
-        .social-icons a:nth-child(2):hover {
-            color: #E1306C; /* Colore originale di Instagram */
+        .social-link i {
+            margin-right: 8px;
+        }
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+        .social-link.facebook:hover {
+            color: #3b5998;
+        }
+        .social-link.instagram:hover {
+            color: #E1306C;
+        }
+        .sponsor-section {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo del sito">
+        <img src="img/logo.png" alt="Logo del sito">
         <h1>🚧 Sito in costruzione 🚧</h1>
         <div class="contact">
             <p><strong>Lionello:</strong> +39 320 76 16 993</p>
             <p><strong>Rosario:</strong> +39 333 64 75 524</p>
-            <p style="font-size: 24px;">info@asdrovere.org</p> <!-- Dimensione della mail -->
+            <p style="font-size: 24px;">info@asdrovere.org</p>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61567076155458" target="_blank">
-                <i class="fab fa-facebook-square"></i>
+            <a href="https://www.facebook.com/profile.php?id=61567076155458" target="_blank" class="social-link facebook">
+                <i class="fab fa-facebook-square"></i> Facebook
             </a>
-            <a href="https://www.instagram.com/asdrovere2024/" target="_blank">
-                <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/asdrovere2024/" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i> Instagram
             </a>
+        </div>
+        <div class="sponsor-section">
+            <img src="img/barison.png" alt="Sponsor Barison" class="sponsor-logo">
+            <img src="img/andiamodamichi.png" alt="Sponsor Andiamo da Michi" class="sponsor-logo">
         </div>
     </div>
 </body>
