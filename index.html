@@ -23,18 +23,18 @@
             padding-left: 10px;
             padding-right: 10px;
         }
-        img {
-            max-width: 100%;
+        .logo {
+            max-width: 500px; /* Dimensione più grande per il logo della Rovere */
+            width: 100%;
             height: auto;
         }
         .sponsor-logo {
-            max-width: 300px;
-            width: 100%; /* Adatta la larghezza al dispositivo */
+            max-width: 200px; /* Dimensione più piccola per i loghi degli sponsor */
+            width: 100%;
             margin: 10px auto; /* Centra e aggiunge spazio verticale */
             border: 1px solid black;
             border-radius: 50%;
             box-sizing: border-box;
-            padding: 10px; /* Spazio interno per evitare che il contenuto tocchi il bordo */
         }
         h1 {
             color: red;
@@ -80,15 +80,18 @@
         /* Media Query per schermi piccoli */
         @media (max-width: 600px) {
             .sponsor-logo {
-                max-width: 150px; /* Riduce la dimensione delle immagini sui telefoni */
+                max-width: 120px; /* Riduce la dimensione degli sponsor sui telefoni */
+            }
+            .logo {
+                max-width: 300px; /* Riduce leggermente il logo della Rovere sui dispositivi mobili */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="img/logo.png" alt="Logo del sito">
-        <h1>🚧 Sito in costruzione 🚧</h1>
+        <img src="img/logo.png" alt="Logo del sito" class="logo">
+        <h1>🚧 SITO IN COSTRUZIONE 🚧</h1>
         <div class="contact">
             <p><strong>Lionello:</strong> +39 320 76 16 993</p>
             <p><strong>Rosario:</strong> +39 333 64 75 524</p>
