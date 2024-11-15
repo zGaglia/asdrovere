@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.D. Rovere 2024</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .logo {
+            max-width: 500px; /* Dimensione più grande per il logo della Rovere */
+            width: 100%;
+            height: auto;
+        }
+        .sponsor-logo {
+            max-width: 200px; /* Dimensione più piccola per i loghi degli sponsor */
+            width: 100%;
+            margin: 10px auto; /* Centra e aggiunge spazio verticale */
+            border: 1px solid black;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: red;
+        }
+        .contact {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .social-icons {
+            margin-top: 20px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-link i {
+            margin-right: 8px;
+        }
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+        .social-link.facebook:hover {
+            color: #3b5998;
+        }
+        .social-link.instagram:hover {
+            color: #E1306C;
+        }
+        .sponsor-section {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
+            justify-content: center;
+            gap: 20px;
+        }
+        /* Media Query per schermi piccoli */
+        @media (max-width: 600px) {
+            .sponsor-logo {
+                max-width: 120px; /* Riduce la dimensione degli sponsor sui telefoni */
+            }
+            .logo {
+                max-width: 300px; /* Riduce leggermente il logo della Rovere sui dispositivi mobili */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo del sito" class="logo">
+        <h1>🚧 Sito in Costruzione 🚧</h1>
+        <div class="contact">
+            <p><strong>Lionello:</strong> +39 320 76 16 993</p>
+            <p><strong>Rosario:</strong> +39 333 64 75 524</p>
+            <p style="font-size: 24px;">info@asdrovere.org</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61567076155458" target="_blank" class="social-link facebook">
+                <i class="fab fa-facebook-square"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/asdrovere2024/" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <div class="sponsor-section">
+            <img src="img/barison.png" alt="Sponsor Barison" class="sponsor-logo">
+            <img src="img/andiamodamichi.png" alt="Sponsor Andiamo da Michi" class="sponsor-logo">
+        </div>
+    </div>
+</body>
+</html>
